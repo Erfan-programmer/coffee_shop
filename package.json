@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "coffe-store",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "aos": "^3.0.0-beta.6",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
+    "init": "^0.1.2",
     "jsonwebtoken": "^9.0.2",
     "leaflet": "^1.9.4",
     "mongoose": "^8.5.1",
@@ -24,5 +25,10 @@
     "recharts": "^2.12.7",
     "sweetalert": "^2.1.2",
     "swiper": "^11.1.8"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
