@@ -1,0 +1,26 @@
+
+.addToCart_btn button{
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    min-width: 50px;
+    max-width: 200px;
+    text-align: center;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: #fff;
+    display: flex;
+    background-color: var(--dark_color);
+    border: 2px solid var(--dark_color);
+    transition: all .3s;
+  }
+  .addToCart_btn button:hover{
+      background-color:#fff;
+      color: var(--dark_color);
+  }
+
+.sidebar_part{
+    position: sticky;
+}

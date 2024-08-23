@@ -1,0 +1,8 @@
+.bGTestimonial{
+    background-image: url("../../../public/images/coffee_parallax.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:700px;
+    background-color: rgba(0, 0, 0 , .5);
+}

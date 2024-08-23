@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: faMedium;
+    src: url("../../../public/fonts/iranyekanwebbold.woff");
+}
+.recent_post_container{
+    height: auto;
+
+    padding-bottom:40px;
+    text-align: center;
+    background-color: var(--dark_color);
+}
+.recent_post_container::before{
+  content: "محصول";
+  color: #232323;
+  text-align: center;
+  font-size: 5rem;
+  font-family:faMedium;
+  font-weight: 900;
+  
+}
+
+@media screen and (min-width:772px) {
+.recent_post_container::before{
+  font-size: 10rem;
+}
+}

@@ -1,0 +1,24 @@
+.open_bg{
+    background-image: url("/images/contact-bg.png");
+    background-size:center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section_forms{
+    height: 100%;
+    min-height:60vh;
+    margin-bottom:200px;;
+}
+.introduce_des_bio_button {
+    padding: 0.7rem 1rem;
+    border-radius: 0.2rem;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--main_color);
+    transition: all .3s;
+  }
+  .introduce_des_bio_button:hover{
+    background-color: var(--dark_color);
+    color: var(--main_color);
+  }

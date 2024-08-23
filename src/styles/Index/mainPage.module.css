@@ -1,0 +1,50 @@
+.main_title h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.main_title h1 span {
+  color: var(--main_color);
+  font-size: 3rem;
+  letter-spacing: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main_bio {
+  max-width: 400px;
+}
+.main_bio p {
+  line-height: 2rem;
+  text-align: justify;
+}
+.main_buttons {
+ display: flex;
+ gap: 1rem;
+ margin-bottom: 1rem;
+}
+.main_buttons a{
+    padding:.4rem;
+    border-radius:.2rem;
+    width:150px;
+    text-align: center;
+    display: inline-block;
+}
+.main_buttons a:nth-child(1){
+    background-color: var(--main_color);
+}
+.main_buttons a:nth-child(2){
+    background-color: black;
+}
+
+@media  screen and (min-width:775px) {
+  .main_title h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .main_title h1 span {
+    color: var(--main_color);
+    font-size: 4rem;
+    letter-spacing: 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}

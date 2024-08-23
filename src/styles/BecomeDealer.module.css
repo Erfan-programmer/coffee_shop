@@ -1,0 +1,76 @@
+.reserve_background {
+  background-image: url("/images/footer_map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-size: calc(100% / 2);
+  padding: 20px;
+}
+
+.introduce_des_bio p {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.introduce_des_bio span {
+  font-size: 1rem;
+}
+.introduce_des_bio h3 span {
+  color: var(--main_color);
+}
+.introduce_des_bio span {
+  width: 400px;
+  line-height: 2rem;
+}
+.time_week_container {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.time_week_container p:nth-child(1) {
+  color: var(--main_color);
+}
+.introduce_des_bio_button,
+.introduce_des_bio_button_dark {
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  background-color: var(--main_color);
+  transition: all 0.3s;
+}
+.introduce_des_bio_button_dark {
+  background-color: var(--dark_color);
+}
+.introduce_des_bio_button:hover {
+  border: 1px solid var(--main_color);
+  color: var(--main_color);
+  background-color: #fff;
+}
+.introduce_des_bio_button_dark:hover {
+  border: 1px solid #212121;
+  color: #212121;
+  background-color: #fff;
+}
+
+.dealer_bg {
+  background-image: url("/images/coffee-cup-1.png");
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 772px) {
+  .introduce_des_bio p {
+    font-size: 1.5rem;
+  }
+  .introduce_des_bio h3 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}

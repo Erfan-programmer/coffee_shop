@@ -1,0 +1,211 @@
+/* Base Styles */
+.discount {
+  padding: 20px;
+  width: 100%;
+}
+
+.title {
+  margin-top: 2rem;
+  text-align: center; /* Center-align title for smaller screens */
+  text-transform: uppercase;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+    text-align: right; /* Right-align title for larger screens */
+  }
+}
+
+.title span {
+  background: #fff;
+  padding: 0 1rem;
+  margin-right: 2rem;
+}
+.empty {
+  color: white;
+  background-color: #c0aa83;
+  padding: 0.7rem 2rem;
+  width: max-content;
+  margin: 5rem auto;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.discount_main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.discount_main div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.discount select,
+.discount input {
+  background: white;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  border: 3px solid #c0aa83;
+  margin-top: 4.5px;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.discount p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+}
+.discount label {
+  font-size: 20px;
+}
+
+.table {
+  width: 100%;
+  background-color: #f2f7fd;
+  border-collapse: collapse; /* Ensure proper table styling */
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table th {
+  border: none;
+  color: #000000;
+}
+
+.table tbody tr {
+  background-color: rgb(255, 255, 255);
+}
+
+.delete_btn {
+  font-size: 13px;
+  background: #c0aa83;
+  padding: 0.4rem 0.7rem;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.discount button {
+  margin-left: auto;
+  width: max-content;
+  border: 0;
+  border-radius: 4px;
+  background-color: #c0aa83;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1.4rem;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 576px) {
+  .empty {
+    margin: 10rem auto;
+    font-size: 2rem;
+  }
+
+  .discount p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .discount_main {
+    flex-direction: row;
+  }
+
+  .discount_main div {
+    width: 48%;
+  }
+
+  .table td,
+  .table th {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .empty {
+    margin: 10rem auto;
+    font-size: 2.2rem;
+  }
+
+  .discount p {
+    font-size: 28px;
+  }
+
+  .discount button {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .discount_main {
+    gap: 50px;
+  }
+
+  .discount_main div {
+    width: 47%;
+  }
+
+  .discount p {
+    font-size: 32px;
+  }
+
+  .empty {
+    font-size: 2.4rem;
+    margin: 15rem auto;
+  }
+
+  .discount button {
+    padding: 0.6rem 2rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .discount p {
+    font-size: 36px;
+  }
+
+  .discount_main div {
+    width: 45%;
+  }
+
+  .empty {
+    font-size: 2.6rem;
+  }
+
+  .discount button {
+    margin-top: 0.5rem;
+  }
+}

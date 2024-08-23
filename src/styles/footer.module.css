@@ -1,0 +1,9 @@
+.footer_bg {
+  background-image: url("/images/footer_map.png");
+
+  height:auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:var(--dark_color);
+}

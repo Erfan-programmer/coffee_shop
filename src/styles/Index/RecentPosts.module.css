@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: faMedium;
+    src: url("../../../public/fonts/iranyekanwebbold.woff");
+}
+.recent_post_container{
+    height: auto;
+
+    padding-bottom:40px;
+    text-align: center;
+    background-color: var(--dark_color);
+}
+.recent_post_container::before{
+  content: "بلاگ";
+  color: #232323;
+  text-align: center;
+  font-size: 10rem;
+  font-family:faMedium;
+  font-weight: 900;
+  
+}

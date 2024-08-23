@@ -1,0 +1,69 @@
+{
+  "name": "coffe_store_project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-react": "^9.0.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/joy": "^5.0.0-beta.48",
+    "@mui/lab": "^5.0.0-alpha.173",
+    "@mui/material": "^5.16.6",
+    "aos": "^2.3.4",
+    "bcryptjs": "^2.4.3",
+    "ckeditor4": "^4.24.0",
+    "ckeditor4-react": "^5.1.0",
+    "ckeditor5": "^43.0.0",
+    "ckeditor5-premium-features": "^43.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "jsvectormap": "^1.6.0",
+    "leaflet": "^1.9.4",
+    "mongoose": "^8.5.2",
+    "next": "14.2.5",
+    "plaiceholder": "^3.0.0",
+    "react": "^18",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-leaflet": "^4.2.1",
+    "react-toastify": "^10.0.5",
+    "recharts": "^2.12.7",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.12.4",
+    "swiper": "^11.1.9"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "coffee-project"
+  },
+  "keywords": [
+    "coffee",
+    "shop",
+    "coffee_shop"
+  ],
+  "author": "Erfan kazemi",
+  "license": "ISC"
+}

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  /* height of the container */
+  .leaflet-container {
+    height: 100vh;
+    width: 90%;
+    border-radius: 2rem;
+  }
+  
+  .cluster-icon {
+    background-color: #333;
+    height: 2em;
+    width: 2em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0px 5px #fff;
+  }
+  
+  .leaflet-container{
+    border-radius:0;
+    height: 100%;
+    width:100%;
+  }
+
+  .leaflet-bottom , .leaflet-right{
+  display: none;
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{
+  height:500px !important;
+}
+
+.leaflet-left {
+    z-index: 900
+}

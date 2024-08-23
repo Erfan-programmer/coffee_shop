@@ -1,0 +1,21 @@
+.search_content_button{
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.search_content_button:hover{
+    background-color:#ddd;
+}
+.empty {
+    color: white;
+    background-color: #c0aa83;
+    padding: 0.7rem 2rem;
+    width: max-content;
+    margin: 15rem auto;
+    font-size: 1.7rem;
+    border-radius: 5px;
+  }

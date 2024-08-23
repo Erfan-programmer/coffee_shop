@@ -1,0 +1,9 @@
+.breadcrumb_bg{
+    min-height:30vh;
+    max-height:35vh;
+    height:100vh;
+    padding:0.5rem;
+    background-image:url("/images/inner_parallax.jpg") ;
+    background-size:cover;
+    background-position: center;
+}

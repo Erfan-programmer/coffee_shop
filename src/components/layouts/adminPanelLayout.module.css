@@ -1,0 +1,32 @@
+.layout {
+  background: white;
+  width: 100%;
+  direction: rtl;
+  height: auto;
+  color: black;
+}
+
+.contents {
+  width: 100%;
+}
+.section {
+  display: flex;
+}
+.openBtn {
+  z-index: 1000 !important;
+}
+.openBtnOpacity{
+  animation: btnAnimation  3s .01s;
+}
+
+@keyframes btnAnimation {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}

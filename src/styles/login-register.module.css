@@ -1,0 +1,10 @@
+.login_register {
+  height: auto;
+  background: linear-gradient(rgb(237, 230, 234), rgb(237, 230, 234));
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.login_register section {
+    background-color: rgb(192, 170, 131);
+}

@@ -1,0 +1,11 @@
+.introduce_des_bio_button {
+    background-color: var(--main_color);
+    height: auto;
+    padding:6px 12px;
+    border-radius: 4px;
+    transition: all .3s;
+  }
+  .introduce_des_bio_button:hover{
+    background-color: var(--dark_color);
+    color: var(--main_color);
+  }

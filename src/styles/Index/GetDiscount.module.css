@@ -1,0 +1,31 @@
+.getDiscount_bg {
+  background-color: var(--dark_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  padding: 1rem;
+}
+
+.introduce_des_bio_button {
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease-in;
+  background-color: var(--main_color);
+}
+.introduce_des_bio_button_dark {
+  padding: 0.8rem;
+  background-color: black;
+  border-radius: 0.2rem;
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease-in;
+}
+.introduce_des_bio_button:hover .introduce_des_bio_button_dark:hover {
+  background-color: #fff;
+  color: black;
+}

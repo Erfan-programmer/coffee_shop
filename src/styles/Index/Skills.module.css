@@ -1,0 +1,18 @@
+.skills_background{
+    background-image: url("../../../public/images/Rectangle-27-copy-2.jpg");
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+    background-size: cover;
+    background-position: center;
+    height:auto;
+}
+.skills_background h4{
+  font-weight: 700;
+  font-size:1.2rem;
+}
+
+@media screen and (min-width:776px) {
+  .skills_background h4{
+    font-size:1.8rem;
+  }
+}

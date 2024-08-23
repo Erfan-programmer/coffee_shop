@@ -1,0 +1,15 @@
+.top_bar_section{
+    position: relative;
+    width:100%;
+    height:auto;
+    background-image: url("../../../public/images/slide_main_coffee2.jpg");
+    background-size: contain;
+    background-position: center;
+}
+.top_bar_article_container{
+    background-image: url("../../../public/images/menu-bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}

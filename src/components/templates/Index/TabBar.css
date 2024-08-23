@@ -1,0 +1,17 @@
+@font-face {
+    font-family:faNum;
+    src: url("/fonts/IRANSansFaNum.ttf");
+}
+.css-ptiqhd-MuiSvgIcon-root{
+    transform:rotate(180deg) !important;
+}
+.css-heg063-MuiTabs-flexContainer{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main_font{
+    font-family: faNum;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    font-family: faNum !important;
+}
