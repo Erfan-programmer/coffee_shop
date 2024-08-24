@@ -8,6 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaSkype } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import FallowNew from "@/components/templates/Index/FallowNew";
+import logo_light from "/public/images/1724394845877logo_white-7.png"
 
 const Footer = () => {
   return (
@@ -20,7 +21,7 @@ const Footer = () => {
               <div className="logo">
                 <Image
                   loading="lazy"
-                  src={"/images/logo_white-7.png"}
+                  src={logo_light}
                   layout="responsive"
                   width={50}
                   height={50}

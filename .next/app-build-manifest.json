@@ -1,10 +1,15 @@
 {
   "pages": {
-    "/page": [
+    "/[...search]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/[...search]/page.css",
+      "static/chunks/app/[...search]/page.js"
+    ],
+    "/[...search]/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[...search]/loading.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -18,34 +23,10 @@
       "static/css/app/template.css",
       "static/chunks/app/template.js"
     ],
-    "/login-register/page": [
+    "/404/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/login-register/page.css",
-      "static/chunks/app/login-register/page.js"
-    ],
-    "/p-user/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/p-user/page.css",
-      "static/chunks/app/p-user/page.js"
-    ],
-    "/cart/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/cart/page.css",
-      "static/chunks/app/cart/page.js"
-    ],
-    "/p-user/tickets/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/p-user/tickets/page.css",
-      "static/chunks/app/p-user/tickets/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/404/page.js"
     ]
   }
 }

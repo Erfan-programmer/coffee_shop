@@ -4,8 +4,9 @@ import "./Navbar.css";
 import { FaHamburger, FaSearch } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 
-import imageSrc from "/public/images/logo_white-7.png";
 import Image from "next/image";
+import logo_light from "/public/images/1724394845877logo_white-7.png"
+import logo_dark from "/public/images/1724394721509logo_white-dark-7.png"
 import { FaAngleDown } from "react-icons/fa";
 import { BsCartFill } from "react-icons/bs";
 import Link from "next/link";
@@ -126,7 +127,7 @@ const Navbar = ({ userToken: token, categoryName }: any) => {
           >
             <Image
               src={
-                fixTop ? "http://localhost:3000/uploads/1724394845877logo_white-7.png" : pathname === "/" ? "http://localhost:3000/uploads/1724394845877logo_white-7.png" : "http://localhost:3000/uploads/1724394721509logo_white-dark-7.png"
+                fixTop ? logo_light : pathname === "/" ? logo_light : logo_dark
               }
               width={100}
               height={150}
