@@ -82,15 +82,7 @@ const Login = ({ showRegisterForm }:any) => {
             <button className={styles.btn} onClick={loginWithPassword}>
               ورود
             </button>
-            <Link href={"/forget-password"} className={styles.forgot_pass}>
-              رمز عبور را فراموش کرده اید؟
-            </Link>
-            <button
-              onClick={() => setIsLoginWithOtp(true)}
-              className={styles.btn}
-            >
-              ورود با کد یکبار مصرف
-            </button>
+
             <span>ایا حساب کاربری ندارید؟</span>
             <button onClick={showRegisterForm} className={styles.btn_light}>
               ثبت نام
