@@ -80,7 +80,7 @@ const Navbar = ({ userToken: token, categoryName }: any) => {
     <nav
       className={`${pathname == "/" ? "bg-transparent absolute" : "bg-white"} ${
         fixTop ? "navbar_fixed lg:bg-[black] lg:text-white" : ""
-      } border-gray-200  p-2 z-50  top-0 right-0 left-0 `}
+      } border-gray-200  p-2 z-50  top-0 right-0 left-0 bg-[red]`}
     >
       {isInputShow ? (
         <div

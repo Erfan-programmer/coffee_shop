@@ -6,8 +6,8 @@ import Stack from "@mui/material/Stack";
 import { purple } from "@mui/material/colors";
 import { Grid } from "@mui/material";
 
-const ColorButton = styled(Button)<ButtonProps>(({ theme }:any) => ({
-  color: theme?.palette.getContrastText(purple[500]),
+const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
+  color: theme.palette.getContrastText(purple[500]),
   backgroundColor: "#c0aa83",
   width:"100%",
   colorScheme: "white",

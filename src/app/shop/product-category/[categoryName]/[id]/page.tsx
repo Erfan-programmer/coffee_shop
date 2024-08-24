@@ -8,8 +8,10 @@ import Link from "next/link";
 import RecentProductCard from "@/components/modules/productCart/ProductCart";
 import { PiLadderBold } from "react-icons/pi";
 import CategoryModel from "@/models/Category"
+import ConnectToDb from "@/configs/db"
 const MainProduct = async ({ params }: any) => {
   const { id, categoryName } = params;
+  ConnectToDb()
   let stars: any = [];
   let initValue = 0;
   const productInfo = await ProductModel.findOne({ _id: id }, "-__v")

@@ -4,7 +4,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import Styles from "@/styles/Cart/Cart.module.css";
 
-import image from "/public/images/coffee_item1-100x100.jpg";
 import InputCount from "@/components/modules/Inputcount";
 import Link from "next/link";
 import Input from "@/components/modules/Input/Input";
@@ -210,7 +209,7 @@ const Cart = ({user}:any) => {
                     </button>
                     <div className="w-20 h-20">
                       <Image
-                        src={cartItem?.img || image}
+                        src={cartItem?.img}
                         width={100}
                         height={100}
                         alt='="'

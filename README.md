@@ -1,40 +1,36 @@
-# Coffee Shop Project
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This project allows you to manage a coffee shop, with features to handle products, menus, tickets, and more. Below are the key features included in this project.
+## Getting Started
 
-## Features
+First, run the development server:
 
-- **Product Management**: 
-  - Add, update, and delete products from your inventory.
-  
-- **Menu Management**: 
-  - Create and manage menus that showcase your products.
-  
-- **Ticketing System**: 
-  - Create tickets and respond to them. This helps manage customer inquiries and issues efficiently.
-  
-- **Discounts**: 
-  - Apply discounts to individual products to attract more customers.
-  
-- **Comments and Reviews**:
-  - Customers can leave comments on products. Comments will be displayed after admin approval.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Admin Features
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **Sign-Up and Admin Privileges**:
-  - When you sign up, you are considered an admin. As an admin, you have access to features like managing products, responding to tickets, and approving comments.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **User Interaction**:
-  - Admins can communicate with users, manage their comments, and monitor their activity on the platform.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Installation and Setup
+## Learn More
 
-_To be added._
+To learn more about Next.js, take a look at the following resources:
 
-## Contribution
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-_To be added._
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## License
+## Deploy on Vercel
 
-_To be added._
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

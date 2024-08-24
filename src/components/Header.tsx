@@ -3,7 +3,9 @@ import Navbar from './modules/Navbar/Navbar'
 import { cookies } from 'next/headers'
 import { authUser } from '@/utils/serverHelpers'
 import CategoryModel from "@/models/Category"
+import ConnectToDB from '@/configs/db'
 const Header= async ({userToken}:any) => {
+  ConnectToDB()
   const category = await CategoryModel.findOne({}) 
   return (
     <>
