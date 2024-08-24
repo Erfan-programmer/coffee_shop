@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import "./../styles/globals.css"
+import "@/styles/globals.css";
 import localFont from "next/font/local";
 import AOSInit from "@/utils/aos";
 import Footer from "@/components/modules/Footer/Footer";
+// pages/_app.js (or _app.tsx)
+import "tailwindcss/tailwind.css"; // Make sure the path is correct
+
 const myFont = localFont({ src: "./../../public/fonts/IRANSansFaNum.ttf" });
 export const metadata: Metadata = {
   title: "قهوه کینگ | صفحه اصلی",

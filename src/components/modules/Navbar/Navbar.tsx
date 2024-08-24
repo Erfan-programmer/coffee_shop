@@ -80,7 +80,7 @@ const Navbar = ({ userToken: token, categoryName }: any) => {
     <nav
       className={`${pathname == "/" ? "bg-transparent absolute" : "bg-white"} ${
         fixTop ? "navbar_fixed lg:bg-[black] lg:text-white" : ""
-      } border-gray-200  p-2 z-50  top-0 right-0 left-0 bg-[red]`}
+      } border-gray-200  p-2 z-50  top-0 right-0 left-0 bg-[#00000033]`}
     >
       {isInputShow ? (
         <div
@@ -161,7 +161,7 @@ const Navbar = ({ userToken: token, categoryName }: any) => {
             <ul
               className={`font-medium   ${
                 pathname === "/"
-                  ? "bg-[#00000088] dark:text-white lg:bg-transparent dark:text-white"
+                  ? "bg-black dark:text-white lg:bg-transparent dark:text-white"
                   : fixTop
                   ? "lg:text-white"
                   : "  dark:text-[#171717] lg:text-white "
@@ -201,7 +201,7 @@ const Navbar = ({ userToken: token, categoryName }: any) => {
               <li>
                 <Link
                   href="/"
-                  className={`block py-2 px-3  bg-[#C0AA83] rounded lg:bg-transparent ${
+                  className={`block py-2 px-3   rounded lg:bg-transparent ${
                     pathname === "/" && " dark:text-[#C0AA83] "
                   } lg:p-0  `}
                   aria-current="page"
@@ -315,20 +315,10 @@ const Navbar = ({ userToken: token, categoryName }: any) => {
                         : "hidden"
                     }  ${
                       pathname === "/"
-                        ? "bg-[#00000088] lg:bg-black dark:text-white"
+                        ? "bg-[#00000033] lg:bg-black dark:text-white"
                         : "bg-white text-[#171717]  dark:text-[#171717]  "
                     } dropdown-list transition-height duration-100  lg:w-40 relative lg:absolute z-10`}
                   >
-                    <li>
-                      <Link
-                        className={`block py-2 px-3 
-                        
-                        rounded hover:bg-[#c0aa83] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#C0AA83] lg:p-0  lg:dark:hover:text-[#C0AA83] dark:hover:bg-[#c0aa83] dark:hover:text-white lg:dark:hover:bg-transparent `}
-                        href="/p-user/orders"
-                      >
-                        سفارشات
-                      </Link>
-                    </li>
                     <li>
                       <Link
                         className={`block py-2 px-3 

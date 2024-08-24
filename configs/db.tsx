@@ -5,7 +5,7 @@ const ConnectToDB = async () => {
     if (mongoose.connections[0].readyState) {
       return true;
     } else {
-      await mongoose.connect(process.env.main_URL);
+      await mongoose.connect("mongodb://localhost:27017/king-coffee");
     }
   } catch (err) {
   }
