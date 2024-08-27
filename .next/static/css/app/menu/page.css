@@ -1,0 +1,58 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/components/templates/menu/cart.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family:faNum;
+    src: url("/fonts/IRANSansFaNum.ttf");
+}
+.css-ptiqhd-MuiSvgIcon-root{
+    transform:rotate(180deg) !important;
+}
+.css-heg063-MuiTabs-flexContainer{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main_font{
+    font-family: faNum;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    font-family: faNum !important;
+}
+.menuItem img{
+  height: 100% !important;
+}
+
+img{
+    height: 100% !important;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/styles/Index/TopBarMenuSection.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.TopBarMenuSection_top_bar_section__tcEQQ{
+    position: relative;
+    width:100%;
+    height:auto;
+    background-image: url(/_next/static/media/slide_main_coffee2.51f3fd63.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.TopBarMenuSection_top_bar_article_container__5rTB_{
+    background-image: url(/_next/static/media/menu-bg.025152d5.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/styles/BreadCrumb/BreadCrumb.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.BreadCrumb_breadcrumb_bg__BUjGJ{
+    min-height:30vh;
+    max-height:35vh;
+    height:100vh;
+    padding:0.5rem;
+    background-image:url("/images/inner_parallax.jpg") ;
+    background-size:cover;
+    background-position: center;
+}

@@ -76,7 +76,7 @@ const ReservationBox = () => {
       headers: {
         "Content-Type": "application/json",
       },
-    } , );
+    });
     if (res.status === 200) {
       const datas = await res.json();
       setReservedRecent(datas.times);
@@ -104,7 +104,10 @@ const ReservationBox = () => {
               setReservePage(false);
             }}
           ></div>
-          <form className=" form_box text-white w-full p-10 h-auto bg-[#222] text-white">
+          <form
+            className=" form_box text-white w-full p-10 h-auto bg-[#222] text-white"
+            id="reservation"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-3 content-center">
               <div className="form_number flex flex-col w-full gap-2">
                 <label htmlFor="شماره میز">شماره میز</label>
@@ -225,23 +228,23 @@ const ReservationBox = () => {
           <div className="table1 mt-[100px]">
             <button
               className={` w-16 h-16 btn_radius  text-white text-xl faBold font-black ${
-                dateTime?.filter((time: any , indexBtn:number) => {
+                dateTime?.filter((time: any, indexBtn: number) => {
                   return reservedRecent?.some(
                     (reservedTime: any) =>
                       reservedTime.tableID === tableID &&
                       time === reservedTime.times
                   );
-                }).length === dateTime.length 
+                }).length === dateTime.length
                   ? " bg-[#c0aa83]"
                   : " bg-[#c0aa83]"
               }`}
               onClick={() => {
                 setReservePage(true);
                 setTableID(index + 1);
-
+                window.scrollTo({ top: 20, behavior: "smooth" });
               }}
             >
-              <Link href={"#overlay"}>میز {index + 1}</Link>
+              میز {index + 1}
             </button>
           </div>
         ))}
@@ -260,7 +263,7 @@ const ReservationBox = () => {
               onClick={() => {
                 setReservePage(true);
                 setTableID(index + 9);
-
+                window.scrollTo({ top: 20, behavior: "smooth" });
               }}
             >
               میز {index + 9}

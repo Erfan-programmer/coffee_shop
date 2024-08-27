@@ -1,0 +1,78 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/components/modules/Navbar/Navbar.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.angle_dropdown{
+    transition: all .3s;
+    transform: rotate(180deg);
+}
+.back_angle{
+    transition: all .3s;
+    transform: rotate(0deg);
+}
+.widget_basket{
+    background-color: var(--widget);
+    width:1.2rem;
+    height:1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100%;
+}
+.main-sectio{
+    margin-right: auto;
+}
+.search_box{
+    animation: searchAnim .4s;
+}
+.inputSearch{
+    border: none;
+    outline: none;
+}
+.inputSearch:focus{
+    border:none;
+    outline:none;
+}
+
+
+@keyframes searchAnim {
+    0%{
+        margin-top:-250px;
+    }
+    100%{
+        margin-top:0px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .service_menu:hover .angle_show{
+     transition: all .3s;
+     transform: rotate(180deg);
+    }
+    .dropdown-container:hover .dropdown-list , .dropdown-list:hover{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        background-color: red;
+    }
+
+    .navbar_fixed {
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        /* def */
+        animation: fadeInDownBig 0.4s ease;
+        left: 0;
+        width: 100%;
+        top: 0;
+        z-index: 1001;
+      }
+    
+      
+      @keyframes fadeInDownBig {
+        0% {
+          transform: translate3d(0, -100%, 0);
+        }
+        100% {
+          transform: none;
+        }
+      }
+}
