@@ -53,7 +53,7 @@ const Navbar = ({ userToken: token, categoryName }: any) => {
 
     return () => window.removeEventListener("scroll", fixNavbarToTop);
   }, []);
-
+2
   useEffect(() => {
     setTokenExist(token);
   }, []);
