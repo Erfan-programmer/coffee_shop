@@ -5,6 +5,7 @@ import styles from "./register.module.css";
 import Sms from "./Sms";
 import { showSwal } from "@/utils/helpers";
 import { valiadteEmail, valiadtePassword, valiadtePhone } from "@/utils/auth";
+import { useRouter } from "next/navigation";
 
 const Register = ({ showloginForm }:any) => {
   const [isRegisterWithPass, setIsRegisterWithPass] = useState(false);
@@ -15,7 +16,7 @@ const Register = ({ showloginForm }:any) => {
   const [password, setPassword] = useState("");
 
   const hideOtpForm = () => setIsRegisterWithOtp(false);
-
+  const router = useRouter()
   const signUp = async () => {
     if (!name.trim()) {
       return showSwal("نام را وارد بکنید", "error", "تلاش مجدد");
@@ -50,6 +51,8 @@ const Register = ({ showloginForm }:any) => {
 
     if (res.status === 201) {
       showSwal("ثبت نام با موفقیت انجام شد", "success", "ورود به پنل کاربری");
+      router.push("/")
+      
     } else if (res.status === 422) {
       showSwal("کاربری با این اطلاعات از قبل وجود دارد", "error", "تلاش مجدد");
     }

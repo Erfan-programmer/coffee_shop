@@ -41,7 +41,7 @@ const Sidebar = ({ children }: childrenType) => {
         <h2 className="text-2xl font-black pr-3"> پیش نمایش سبد خرید </h2>
         <div className="h-[1px] w-11/12 bg-[#aaa] mx-auto mt-5"></div>
         <div className="cart-lists h-auto flex flex-col justify- gap-2 items-center mb-[20px]">
-          {preCart.length ? (
+          {preCart?.length ? (
             preCart.map((cart: any , index) => (
               <div className="w-full flex justify-center gap-5 items-center rounded-md shadow-md p-2">
                 <div className="imageCart w-16 h-16 flex-2">
