@@ -2,12 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output:"standalone",
-  distDir:"dist",
+  output: "standalone",
+  distDir: "dist",
   images: {
-    domains: ["localhost"], // Allow loading from localhost
-    unoptimized:true
+    domains: ["localhost"],
+    unoptimized: true,
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;  // Change this line
