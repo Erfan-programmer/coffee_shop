@@ -79,8 +79,8 @@ export default function DataTable({ products, title }: any) {
                   <div className="flex justify-center items-center">
                     {Array(Math.round(5))
                       .fill(0)
-                      .map((score) => (
-                        <AiFillStar />
+                      .map((score , index) => (
+                        <AiFillStar key={index} />
                       ))}
                   </div>
                 </td>

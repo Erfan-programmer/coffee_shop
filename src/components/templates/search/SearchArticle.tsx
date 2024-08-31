@@ -21,8 +21,8 @@ const SearchArticle = async ({ searchResult }: any) => {
         <>
           <h2 className="font-black text-4xl faMedium my-[20px]">محصولات</h2>
           <div className="product-box">
-            {findProduct?.map((product: any) => (
-              <article className="text-lg font-black w-full bg-[#aaa] mt-[10px] p-10 h-auto md:h-[140px] rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-5 items-start">
+            {findProduct?.map((product: any , index:any) => (
+              <article key={index} className="text-lg font-black w-full bg-[#aaa] mt-[10px] p-10 h-auto md:h-[140px] rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-5 items-start">
                 <div className="flex flex-col gap-5">
                   <div>
                     <h3>{product?.title}</h3>
@@ -34,8 +34,8 @@ const SearchArticle = async ({ searchResult }: any) => {
                     <div className="flex gap-2">
                       برچسب ها :{" "}
                       <div className="flex justify-center gap-2">
-                        {product?.labels?.map((item: any) => (
-                          <span className="text-[#f1f1f1]">
+                        {product?.labels?.map((item: any , index:any) => (
+                          <span className="text-[#f1f1f1]" key={index}>
                             #<span className="underline">{item}</span>
                           </span>
                         ))}
@@ -58,8 +58,8 @@ const SearchArticle = async ({ searchResult }: any) => {
         <>
           <h2 className="font-black text-4xl faMedium my-[20px]">منوها</h2>
           <div className="product-box">
-            {findSubMenu?.map((menu: any) => (
-              <article className="text-lg font-black w-full bg-[#aaa] mt-[10px] p-10 h-auto md:h-[140px] rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-5 items-start">
+            {findSubMenu?.map((menu: any , index) => (
+              <article key={index} className="text-lg font-black w-full bg-[#aaa] mt-[10px] p-10 h-auto md:h-[140px] rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-5 items-start">
                 <div className="flex flex-col gap-5">
                   <div>
                     <h3>{menu?.title}</h3>
@@ -71,8 +71,8 @@ const SearchArticle = async ({ searchResult }: any) => {
                     <div className="flex gap-2">
                       برچسب ها :{" "}
                       <div className="flex justify-center gap-2">
-                        {menu?.label?.map((item: any) => (
-                          <span className="text-[#f1f1f1]">
+                        {menu?.label?.map((item: any , index:any) => (
+                          <span className="text-[#f1f1f1]" key={index}>
                             #<span className="underline">{item}</span>
                           </span>
                         ))}

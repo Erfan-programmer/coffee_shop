@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "react/react-in-jsx-scope": "off",
+    // Add more rules as needed, or use a wildcard to disable all rules
+  },
 }

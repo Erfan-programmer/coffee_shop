@@ -82,8 +82,8 @@ const AboutUsSection = () => {
           </div>
 
           <div className="service_introduce grid grid-cols-1 justify-items-center content-center  md:grid-cols-2 lg:grid-cols-4 mt-[150px]">
-            {serviceInfos?.map((serviceInfo: any) => (
-              <AboutItemBox {...serviceInfo} />
+            {serviceInfos?.map((serviceInfo: any , index) => (
+              <AboutItemBox {...serviceInfo} key={index}/>
             ))}
           </div>
         </div>

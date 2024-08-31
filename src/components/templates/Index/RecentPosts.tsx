@@ -42,8 +42,8 @@ const RecentPosts = () => {
         </div>
         <div className="posts_container w-full">
           <div className="posts-inner grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center	 content-center">
-            {postsIno?.map((post) => (
-              <RecentPostCard {...post} />
+            {postsIno?.map((post , index) => (
+              <RecentPostCard key={index} {...post} />
             ))}
           </div>
           <div className="posts-inner_des-btn my-20">

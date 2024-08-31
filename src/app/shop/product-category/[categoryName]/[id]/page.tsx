@@ -52,9 +52,10 @@ const MainProduct = async ({ params }: any) => {
           <div className="posts_container w-full">
             <div className="posts-inner grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center	 content-center">
               {JSON.parse(JSON.stringify(relatedProducts)).filter((product:any)=> product._id !==  String(id) )?.map(
-                (product: any) => (
+                (product: any , index:any) => (
                   <RecentProductCard
                     {...product}
+                    key={index}
                     btnTitle={"مشاهده"}
                     href={`/shop/product-category/${categoryName?.label}/${product?._id}`}
                   />

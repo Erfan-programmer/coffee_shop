@@ -225,7 +225,7 @@ const ReservationBox = () => {
       )}
       <div className="w-full grid grid-cols-2 md:grid-cols-4 justify-items-center gap-[50px] content-center  h-full ">
         {new Array(8).fill(0)?.map((table, index) => (
-          <div className="table1 mt-[100px]">
+          <div className="table1 mt-[100px]" key={index}>
             <button
               className={` w-16 h-16 btn_radius  text-white text-xl faBold font-black ${
                 dateTime?.filter((time: any, indexBtn: number) => {
@@ -257,7 +257,7 @@ const ReservationBox = () => {
       </div>
       <div className="w-full grid grid-cols-2 md:grid-cols-4 justify-items-center gap-[50px] content-center  h-full mt-[50px]">
         {new Array(4).fill(0)?.map((table, index) => (
-          <div className="table1">
+          <div className="table1" key={index}>
             <button
               className={` w-24 h-24 btn_radius  text-white text-xl faBold font-black bg-[#c0aa83]`}
               onClick={() => {

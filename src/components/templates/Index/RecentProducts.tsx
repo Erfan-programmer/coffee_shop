@@ -20,8 +20,8 @@ const RecentProducts = ({lastProducts , category , title  , subTitle}:any) => {
         </div>
         <div className="posts_container w-full">
           <div className="posts-inner grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center	 content-center">
-            {lastProducts?.map((product:any) => (
-              <RecentProductCard {...product} btnTitle="ادامه ..." href={`/shop/product-category/${product?.category.title}/${product?._id}`}/>
+            {lastProducts?.map((product:any , index:any) => (
+              <RecentProductCard key={index} {...product} btnTitle="ادامه ..." href={`/shop/product-category/${product?.category.title}/${product?._id}`}/>
             ))}
           </div>
           <div className="posts-inner_des-btn my-20">

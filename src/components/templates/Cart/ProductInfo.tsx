@@ -2,7 +2,6 @@
 import CartItem from "@/components/modules/cartItem/CartItem";
 import SelectBox from "@/components/modules/SelectBox/selectBox";
 import React, { useState } from "react";
-import image from "/public/images/coffee_item7-300x300.jpg";
 import Styles from "@/styles/CartItem/ccartMain.module.css";
 import Image from "next/image";
 import { BsCartFill } from "react-icons/bs";
@@ -93,7 +92,7 @@ const ProductInfo = ({ productInfo, productID, token, stars }: any) => {
         <div className="shop-main_header flex overflow-hidden flex-col md:flex-row justify-center h-100 items-start mt-[100px] gap-5">
           <div className="w-[100%] md:w-[40%]  h-full flex flex-col justify-center items-center ]">
             <Image
-              src={productInfo?.img?.imgUrl || image}
+              src={productInfo?.img?.imgUrl}
               layout="responsive"
               width={100}
               height={100}
@@ -190,9 +189,9 @@ const ProductInfo = ({ productInfo, productID, token, stars }: any) => {
               <p className="ml-2">برچسب ها</p>
 
               <ul className="text-[#c0aa83] flex justify-between gap-1 ">
-                {productInfo?.labels?.map((label: string) => (
+                {productInfo?.labels?.map((label: string , index:any) => (
                   <li>
-                    <Link href="">{label}</Link>
+                    <Link href="" key={index}>{label}</Link>
                   </li>
                 ))}
               </ul>
