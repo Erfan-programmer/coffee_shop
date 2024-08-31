@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: "standalone",
   distDir: "dist",
   images: {
     domains: ["localhost"],
