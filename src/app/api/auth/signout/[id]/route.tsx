@@ -3,8 +3,21 @@ import UserModel from "@/models/User";
 import { isValidObjectId } from "mongoose";
 import { cookies } from "next/headers";
 
+export async function generateStaticParams() {
+  // Connect to the database
+  await ConnectToDB();
+  
+  // Fetch all user IDs from the database
+  const users = await UserModel.find({}, '_id'); // Only fetching the '_id' field
+  const paths = users.map((user) => ({
+    params: { id: user._id.toString() },
+  }));
+  
+  return paths;
+}
+
 export async function POST(req: any, { params }: any) {
-  ConnectToDB();
+  await ConnectToDB();
   try {
     const { id } = params;
     if (!isValidObjectId(id)) {
