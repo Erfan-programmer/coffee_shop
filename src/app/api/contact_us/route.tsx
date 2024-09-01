@@ -5,14 +5,14 @@ export async function POST(req:any){
     try{
         const {username , email , post} = await req.json()
         if(!username.trim() || !email.trim() || !post.trim()){
-            return Response.json({message:" اطلاعات این کاربر قبلا صبت شده است"} , {status:422})
+            return Response.json({message:" اطلاعات این کاربر قبلا ثبت شده است"} , {status:422})
         }
       const newContacts = await ContactUsModel.create({
         username , email , post
       })
       if(newContacts){
 
-        return Response.json({message:"اطلاعات تماس با موفقیت صبت شد"} , {status:201})
+        return Response.json({message:"اطلاعات تماس با موفقیت ثبت شد"} , {status:201})
       }
 
     }

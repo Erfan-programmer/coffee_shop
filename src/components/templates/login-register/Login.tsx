@@ -46,8 +46,8 @@ const Login = ({ showRegisterForm }:any) => {
 
     if (res.status === 200) {
       ToastSuccess("با موفقیت وارد شدید" , "success")
-      router.replace("/p-user")
       router.refresh()
+      router.replace("/p-user")
     } else if (res.status === 422 || res.status === 401) {
       showSwal("کاربری با این اطلاعات یافت نشد", "error", "تلاش مجدد");
     } else if (res.status === 409) {

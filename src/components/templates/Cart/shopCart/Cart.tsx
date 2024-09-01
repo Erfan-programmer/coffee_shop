@@ -209,7 +209,7 @@ const Cart = ({user}:any) => {
                     </button>
                     <div className="w-20 h-20">
                       <Image
-                        src={cartItem?.img}
+                        src={cartItem?.img.imgUrl}
                         width={100}
                         height={100}
                         alt='="'

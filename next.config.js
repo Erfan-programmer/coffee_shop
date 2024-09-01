@@ -6,7 +6,7 @@ const nextConfig = {
   distDir: "dist",
   images: {
     domains: ["localhost"],
-    unoptimized: true,
+    // unoptimized: true,
   },
 };
 

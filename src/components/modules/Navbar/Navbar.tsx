@@ -365,9 +365,9 @@ const Navbar = ({ userToken: token, categoryName }: any) => {
                       href="/login-register"
                       className={`flex justify-between items-center py-2 px-3 ${
                         pathname == "/"
-                          ? "text-gray-900 dark:text-white"
+                          ? "text-white dark:text-white"
                           : "text-[#171717]"
-                      } rounded hover:bg-[#c0aa83] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#C0AA83] lg:p-0  lg:dark:hover:text-[#C0AA83] dark:hover:bg-[#c0aa83] dark:hover:text-white lg:dark:hover:bg-transparent `}
+                      } ${fixTop && "text-white"} rounded hover:bg-[#c0aa83] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#C0AA83] lg:p-0  lg:dark:hover:text-[#C0AA83] dark:hover:bg-[#c0aa83] dark:hover:text-white lg:dark:hover:bg-transparent `}
                     >
                       ورود / عضویت
                     </Link>

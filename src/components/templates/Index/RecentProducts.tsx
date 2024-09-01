@@ -25,7 +25,7 @@ const RecentProducts = ({lastProducts , category , title  , subTitle}:any) => {
             ))}
           </div>
           <div className="posts-inner_des-btn my-20">
-            <Link href={`/shop/product-category/${category && category[0]?.title}`} className={"introduce_des_bio_button_dark border border-2 border-[#c0aa83] text-[#c0aa83] bg-white]"}>
+            <Link href={`/shop/product-category/${category && category[0]?.label}`} className={"introduce_des_bio_button_dark border border-2 border-[#c0aa83] text-[#c0aa83] bg-white]"}>
               بیشتر
             </Link>
           </div>

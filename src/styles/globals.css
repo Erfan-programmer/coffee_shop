@@ -128,7 +128,7 @@ body {
   padding: 0.7rem;
 }
 .css-o69gx8-MuiCardMedia-root {
-  height:300px;
+  height: 300px;
   transition: all 0.4s;
 }
 .css-o69gx8-MuiCardMedia-root:hover {
@@ -454,11 +454,29 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 1.5rem !important;
   text-align: center !important;
 }
-.tickets_content__uIIdq , .orders_content__gFVyH{
+.tickets_content__uIIdq,
+.orders_content__gFVyH {
   width: 100% !important;
 }
 .p-admin_dashboard_charts__DC4Pg section {
-width: 100% !important;
+  width: 100% !important;
+}
+.css-1k2opx2 {
+  display: flex;
+  align-self: baseline;
+border: none !important;
+  padding: 4px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  margin: 11.5px 0px;
+  color: rgb(250, 250, 250) !important;
+  background-color: #BDBDBD !important
+}
+.css-k008qs{
+ display: flex;
+ justify-content: center !important;
+ align-items: center !important;
 }
 @media screen and (min-width: 776px) {
   .swiper-button-prev,
@@ -521,13 +539,15 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   height: 100% !important;
 }
 
-figure{
+figure {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-
+.css-1qmqn4r{
+  color: #171717 !important;
+}
 @media (min-width: 1200px) {
   .css-12e8buv-MuiTypography-root {
     font-family: faMedium !important;

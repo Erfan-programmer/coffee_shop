@@ -93,9 +93,7 @@ export default function DataTable({ products, title }: any) {
                   className="text-center"
                   dangerouslySetInnerHTML={{
                     __html:
-                      product.longDescription.length > 30
-                        ? product.longDescription.slice(0, 15) + "..."
-                        : product.longDescription,
+                        product.longDescription.slice(0, 15)
                   }}
                 ></td>
                 <td>
